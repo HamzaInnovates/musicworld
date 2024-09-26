@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% block head %}
+<head>
+    {% load static%}
+    
+    <title>{% block title %}{% endblock title %}</title>
+  
+      {% block style %}
+     
+      {% endblock style %}
+ 
+</head>
+{% endblock head %}
+<body>
+    <Nav>
+        <ul>
+          <li class="logo"> <img src="{% static 'assets/logo.png' %}" alt="Spotify" ></li>
+          <div class="move">
+          <li><a href="/">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/about/">About</a></li>
+          
+        </div>
+        </ul>
+      </Nav>
+          <div class="displ"> Categories
+            <br>
+            <br>
+          
+            <a href="http://127.0.0.1:8000/bollywood/" class="show">Bollywood</a>
+            <a href="http://127.0.0.1:8000/ncs/" class="show">NCS</a>
+            <a href="http://127.0.0.1:8000/pop/" class="show">POP</a>
+          </div>
+          
+         
+    {% block body %}{% endblock body %}
+</body>
+{% block javascript %}{% endblock javascript %}
+</html>

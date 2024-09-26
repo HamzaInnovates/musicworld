@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Music World</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url('https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=600');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .category:hover {
+      background-color: rgba(101, 86, 167, 0.5);
+    }
+
+    .contact-us {
+      background-color: rgba(137, 128, 128, 0.4);
+      color: wheat;
+      padding: 30px;
+      border: 2px solid #cecee7;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+
+    .contact-us h2, .contact-us p {
+      text-align: center;
+    }
+
+    .category a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    p {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    img {
+      height: 32px;
+      width: 34px;
+      border-radius: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center py-5">
+    <h1 class="display-4">Get to Know About Us!</h1>
+    <p class="lead">Welcome to Music World!</p>
+    <p>At Music World, we believe that music has the power to transport us to another dimension, evoke emotions, and create unforgettable memories. Our mission is to bring the world of music right to your fingertips and enhance your listening experience like never before.</p>
+
+    <p>With our innovative music app, we offer a seamless and user-friendly interface that allows you to dive into a world of captivating melodies and rhythmic beats. Here's what sets us apart:</p>
+
+    <p>Unleash the Power of Control: Our app puts you in the driver's seat of your music journey. Play, pause, skip, or go back to your favorite tunes with ease. Enjoy the freedom to curate your perfect playlist and let the music flow to match your mood.</p>
+
+    <p>Immerse Yourself in Three Captivating Categories: Music World features three distinct categories of music to cater to your diverse tastes:</p>
+
+    <div class="row justify-content-center my-4">
+      <div class="col-md-3">
+        <div class="category bg-light text-dark p-3 rounded ">
+          <a  class="text-dark"href="{% url 'bollywood' %}">Bollywood</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div  class="category bg-light text-dark p-3 rounded">
+          <a  class="text-dark" href="{% url 'ncs' %}">NCS</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category bg-light text-dark p-3 rounded">
+          <a  class="text-dark" href="{% url 'pop' %}">Pop</a>
+        </div>
+      </div>
+    </div>
+
+    <p>Simply click on a category to discover a vast collection of songs in that genre. You can play, pause, skip to the previous or next song, and create your personalized playlists.</p>
+
+    <p>Experience the joy of music with Music World and let the melodies take you on a journey!</p>
+  </div>
+
+  <div class="container contact-us text-center">
+    <h2>Contact Us</h2>
+    <p>Email: myapp.musicworld@gmail.com</p>
+    <p>Phone: 1136627378</p>
+    <p>Follow us on <a href="https://instagram.com/musicworld" target="_blank">Instagram</a> <img src="insta.jfif" alt="Instagram Icon"></p>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

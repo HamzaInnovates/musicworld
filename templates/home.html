@@ -1,0 +1,56 @@
+
+{% extends "base.html" %}
+{% block head %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %} <title> Home Page </title>{% endblock title %}
+
+{% block style %}
+<style> body{
+  font-family: 'Roboto Slab', serif;
+  background-image:  url("{% static 'assets/bimag.jpg' %}");
+  background-size: cover;
+}
+.out {
+  position: absolute;
+  top: 14px;
+  left: 418px;
+
+
+
+}
+button{
+
+  font-weight: bold;
+  padding: 21px;
+  color:black;
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 22px;
+  border: none;
+}
+button:hover {
+  background-color: darkgray;
+ color: black;
+ cursor: pointer;
+}
+</style>
+
+{% endblock style %}
+{% endblock head %}
+{% block body %}
+<div class="container">
+  <h1>Welcome To Music World!</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero animi molestiae omnis recusandae ut incidunt asperiores corrupti magnam quod tempora nostrum voluptatibus est cum libero doloribus reprehenderit amet labore maxime, eaque et ea nesciunt excepturi perferendis in! Nemo veritatis nam, perspiciatis itaque dicta animi? Neque reprehenderit at molestiae architecto perspiciatis libero vero, a eos velit adipisci, corrupti maiores, voluptatibus recusandae?</p>
+  <div class="pics">
+    <div><img id="pic1" src="{% static 'Cimg/1.jfif' %}" alt="NCS"></div>
+    <div><img id="pic2" src="{% static 'Cimg/2.jfif' %}" alt="bollyWood"></div>
+    <div><img id="pic3" src="{% static 'Cimg/3.png' %}" alt="POP"></div>
+  </div>
+</div>
+<div class="play">
+  <img src=" {% static 'assets/play.gif' %}">
+</div>{% endblock body %}
+
