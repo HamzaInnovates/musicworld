@@ -11,5 +11,8 @@ urlpatterns = [
     path('about/bollywood/', bollywood, name='bollywood'),
     path('about/ncs/', ncs, name='ncs'),
     path('about/pop/', pop, name='pop'),
+    path('login/', login_page, name='login_page'),
+    path('register/', register, name='register'),
+    path('logout/', logout_page, name='logout'),
 
 ]
