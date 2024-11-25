@@ -130,6 +130,14 @@ font-weight: bolder;
 .pics  {
 display: flex;
 justify-content: space-between;
+flex-wrap: wrap;
+}
+@media (min-width: 1100px) {
+  .pics {
+    border: 1px solid black;
+    display: flex;
+   flex-direction: column;
+  }
 }
 .pics img {
 margin: 20px ;

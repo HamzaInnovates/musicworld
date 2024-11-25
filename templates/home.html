@@ -5,10 +5,13 @@
     <link rel="stylesheet" href="{% static 'css/style1.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 {% block title %} <title> Home Page </title>{% endblock title %}
 
 {% block style %}
-<style> body{
+<style> 
+  
+  body{
   font-family: 'Roboto Slab', serif;
   background-image:  url("{% static 'assets/bimag.jpg' %}");
   background-size: cover;
@@ -41,16 +44,19 @@ button:hover {
 {% endblock style %}
 {% endblock head %}
 {% block body %}
-<div class="container">
-  <h1>Welcome To Music World!</h1>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero animi molestiae omnis recusandae ut incidunt asperiores corrupti magnam quod tempora nostrum voluptatibus est cum libero doloribus reprehenderit amet labore maxime, eaque et ea nesciunt excepturi perferendis in! Nemo veritatis nam, perspiciatis itaque dicta animi? Neque reprehenderit at molestiae architecto perspiciatis libero vero, a eos velit adipisci, corrupti maiores, voluptatibus recusandae?</p>
-  <div class="pics">
-    <div><img id="pic1" src="{% static 'Cimg/1.jfif' %}" alt="NCS"></div>
-    <div><img id="pic2" src="{% static 'Cimg/2.jfif' %}" alt="bollyWood"></div>
-    <div><img id="pic3" src="{% static 'Cimg/3.png' %}" alt="POP"></div>
-  </div>
-</div>
-<div class="play">
-  <img src=" {% static 'assets/play.gif' %}">
-</div>{% endblock body %}
 
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center" style="border: 1px solid black;">
+    <div class="col-12 col-md-2 col-sm-2 d-flex" style="align-items:center; justify-content:center;"><img src=" {% static 'assets/play.gif' %}" style="border-radius: 50%; height: 220px; width: 220px;;"></div>
+    <div class="col-10 d-flex" style="flex-direction: column; align-items:center; justify-content:center;">
+      <h1>Welcome To Music World!</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero animi molestiae omnis recusandae ut incidunt asperiores corrupti magnam quod tempora nostrum voluptatibus est cum libero doloribus reprehenderit amet labore maxime, eaque et ea nesciunt excepturi perferendis in! Nemo veritatis nam, perspiciatis itaque dicta animi? Neque reprehenderit at molestiae architecto perspiciatis libero vero, a eos velit adipisci, corrupti maiores, voluptatibus recusandae?</p>
+      <div class="pics">
+        <div><img id="pic1" src="{% static 'Cimg/1.jfif' %}" alt="NCS"></div>
+        <div><img id="pic2" src="{% static 'Cimg/2.jfif' %}" alt="bollyWood"></div>
+        <div><img id="pic3" src="{% static 'Cimg/3.png' %}" alt="POP"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>{% endblock body %}
